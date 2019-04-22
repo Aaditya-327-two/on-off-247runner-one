@@ -7,9 +7,10 @@ second = ["on-off-247runner-two", ]
 
 import heroku3
 import time
+import os
 
 gapOfCheck = 1728000
-HEROKU_API = "ea15b1ea-40b6-47a1-9eb9-41a5a67df4a0"
+HEROKU_API = os.environ['HEROKU_API']
 heroku_conn = heroku3.from_key(HEROKU_API)
 
 #---------------------------------------------------------------
